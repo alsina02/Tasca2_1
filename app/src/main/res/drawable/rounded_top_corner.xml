@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#C6323232"
+        android:fontFamily="@font/yeezy_font" />
+
+    <padding
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp" />
+
+    <corners android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"/>
+</shape>

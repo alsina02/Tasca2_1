@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MapsActivity">
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/yeezy_font"
+        android:padding="8dp"
+        android:paddingLeft="14dp"
+        android:text="Ciutat"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="372dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/yeezy_font"
+        android:text="Fechinha"
+        android:padding="8dp"
+        android:paddingLeft="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/yeezy_font"
+        android:padding="8dp"
+        android:paddingLeft="14dp"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonComprarTickets"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:text="Comprar tickets"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateTime" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="372dp"
+        android:layout_height="577dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComprarTickets"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
